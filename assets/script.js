@@ -45,9 +45,6 @@ function getWeatherByCity() {
             temperature.textContent = fahrenheit;
             wind.textContent = windSpeed;
             humid.textContent = humidity;
-            
-
-
 
         })
 
