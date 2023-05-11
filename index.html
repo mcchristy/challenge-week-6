@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <link rel="stylesheet" href="assets/styles.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container-fluid">
+        <h1>Weather Dashboard</h1>
+      </header>
+      <aside class="searchBar">
+          <h2>Search for a City:</h2>
+          <input id="searchInput" type="text" placeholder="Search City..">
+          <button id="searchBtn">
+            <h3>Search</h3>
+          </button>
+      </aside> 
+      <section class="container-fluid" id="displayApi">
+        <div id="weatherData">
+            <div id="location"></div>
+            <div id="date"></div>
+            <img src="" alt="" id="weather-icon">
+            <div class="weather">
+                <div class="temp"></div>
+                <div class="wind-speed"></div>
+                <div class="humidity"></div>
+            </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
