@@ -16,19 +16,6 @@ function getWeatherApi() {
         })
         .then(function (data) {
             console.log(data);
-
-        })
-}
-
-function getWeatherByCity() {
-    var requestCity = 'api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}'
-    
-    fetch(requestCity)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data);
             var place = data.name;
             var {date} = data.time;
             var icon = data.symbol;
@@ -39,14 +26,15 @@ function getWeatherByCity() {
             var dateinGMT = new Date(date * 1000);
             var fahrenheit = (temp * 9) / 5 + 32;
 
+            searchBar.addEventListener('search', () {
+            
             location.textContent = place;
             dateInfo.textContent = dateinGMT;
             iconImage.src = icon;
             temperature.textContent = fahrenheit;
             wind.textContent = windSpeed;
             humid.textContent = humidity;
-
         })
-
-
+        })
+        
 }
