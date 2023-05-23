@@ -30,3 +30,7 @@ input {
     align-items: center;
 }
 
+#weatherData {
+    border: 2px, solid, rgb(59, 59, 166);
+}
+
