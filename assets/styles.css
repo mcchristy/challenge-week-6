@@ -7,6 +7,11 @@ header {
     
 }
 
+.container-fluid {
+    padding: 0%;
+    margin: 0;
+}
+
 h1 {
     text-align: center;
 }
@@ -17,7 +22,10 @@ h1 {
     width: 200px;
     height: 50px;
     margin: 4px;
+}
 
+#searchInput {
+    width: 190px
 }
 
 aside {
@@ -30,7 +38,94 @@ input {
     align-items: center;
 }
 
-#weatherData {
-    border: 2px, solid, rgb(59, 59, 166);
-}
+#position {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  
+  #date {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    
+  }
 
+  #weather-icon {
+    display: block;
+  }
+  
+  #temp {
+    font-size: 15px;
+    
+  }
+  
+  #wind-speed {
+    font-size: 15px;
+  }
+  
+  #humidity {
+    font-size: 15px;
+  }
+
+ 
+  .container {
+  float: none;
+  clear: both;
+  }
+
+  #display-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    align-items:flex-start;
+    
+  }
+
+  .searchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 30%;
+  }
+
+  #weatherData {
+    width: 40%;
+    float: right;
+    margin-right: 30%;
+  }
+  
+  .displayed-city {
+    font-size: 15px;
+    color:black;
+    margin: 5px;
+
+  }
+
+  #forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(59, 59, 166) ;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .forecast-item img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .forecast-item div {
+    font-size: 14px;
+    margin-top: 5px;
+  }
