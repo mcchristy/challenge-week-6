@@ -1,7 +1,7 @@
 # challenge-week-6 Weather App
 This project was designed to create a timed quiz on common culinary infomation.
 
-![deployed weather application](./Assets/Images/deployed-weather-app.jpg)
+![deployed weather application](./assets/Images/deployed-weather-app.jpg)
 
 ## Table of Contents
 -[About]
